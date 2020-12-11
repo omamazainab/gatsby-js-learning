@@ -1,8 +1,10 @@
-import React from "react"
-import '../styles/index.scss'
-import { useSiteMetaData } from '../hooks/useSiteMetaData'
+import React, { Children } from "react"
+import Layout from '../components/Layout/Layout'
 
 export default function Home() {
-  const data = useSiteMetaData()
-  return (<div>title: {data.title} author: {data.author}</div>)
+  return (
+    <Layout>
+      I'm Home
+    </Layout>
+  )
 }
