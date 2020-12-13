@@ -6,7 +6,17 @@ const Index = () => {
     console.log(blogs)
     return (
         <div>
-            {blogs.map(blog => (<p>{blog.excerpt}</p>))}
+            <ol>
+                {blogs.map(blog => (
+                    <>
+                        <li>
+                            <h2>{blog.frontmatter.title}</h2>
+                            <small>{blog.frontmatter.date}</small>
+                            <p dangerouslySetInnerHTML={{__html:blog.html}}></p>
+                        </li>
+                    </>
+                ))}
+            </ol>
         </div>
     )
 }
