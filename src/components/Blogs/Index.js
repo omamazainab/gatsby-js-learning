@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { useBlogPosts } from '../../hooks/useBlogPosts'
 
 const Index = () => {
@@ -10,9 +11,9 @@ const Index = () => {
                 {blogs.map(blog => (
                     <>
                         <li>
-                            <h2>{blog.frontmatter.title}</h2>
+                            <h2><Link to={`/blogs/${blog.fields.slug}`}>{blog.frontmatter.title}</Link></h2>
                             <small>{blog.frontmatter.date}</small>
-                            <p dangerouslySetInnerHTML={{__html:blog.html}}></p>
+                            <p dangerouslySetInnerHTML={{ __html: blog.html }}></p>
                         </li>
                     </>
                 ))}

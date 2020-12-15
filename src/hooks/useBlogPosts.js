@@ -14,6 +14,9 @@ export const useBlogPosts = () => {
               }
               html
               excerpt
+              fields{
+                slug
+              }
             }
           }
         }
