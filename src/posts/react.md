@@ -1,6 +1,7 @@
 ---
-title: "react"
-date: "12-12-20"
+title: "React"
+date: "2020-12-12"
 ---
 
-##Let's learn react
+In this post you'll learn React.
+

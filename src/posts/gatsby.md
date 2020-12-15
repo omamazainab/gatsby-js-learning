@@ -1,7 +1,14 @@
 ---
-title: "react"
-date: "12-12-20"
+title: "The Great Gatsby Bootcamp"
+date: "2020-12-12"
 ---
 
-##Let's learn gatsby
+I just launched a new bootcamp!
 
+![image](./image.jpg)
+
+## Topics Covered
+
+1. Gatsby
+2. GraphQL
+3. React

@@ -7,10 +7,10 @@ const index = () => {
         <header className={styles.header}>
             <nav className={styles.navbar}>
                 <div className={styles.nav}>
-                    <Link to="/" className={styles.link}>Home</Link>
+                    <Link to="/" className={styles.link} activeStyle={{color:'black'}}>Home</Link>
                 </div>
                 <div className={styles.nav}>
-                    <Link to="/blogs" className={styles.link}>Blogs</Link>
+                    <Link to="/blogs" className={styles.link} activeStyle={{color:'black'}}>Blogs</Link>
                 </div>
             </nav>
         </header>
