@@ -1,28 +1,28 @@
-import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+// import React from 'react'
+// import { useStaticQuery, graphql } from "gatsby"
 
-export const useBlogPosts = () => {
+// export const useBlogPosts = () => {
 
-    const data = useStaticQuery(graphql`
-    query Posts {
-        allMarkdownRemark{
+//     const data = useStaticQuery(graphql`
+//     query Posts {
+//         allMarkdownRemark{
           
-            nodes{
-              frontmatter{
-                title
-                date
-              }
-              html
-              excerpt
-              fields{
-                slug
-              }
-            }
-          }
-        }
+//             nodes{
+//               frontmatter{
+//                 title
+//                 date
+//               }
+//               html
+//               excerpt
+//               fields{
+//                 slug
+//               }
+//             }
+//           }
+//         }
          
-    `)
-    return data.allMarkdownRemark.nodes
-}
+//     `)
+//     return data.allMarkdownRemark.nodes
+// }
 
 

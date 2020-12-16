@@ -6,16 +6,9 @@ import Layout from '../components/Layout/Layout'
 
 export const query = graphql`
 query($slug:String){
-    markdownRemark(fields: {
-      slug:{
-        eq: $slug
-      }
-    }){
-      frontmatter{
-        title
-        date
-      }
-      html
+    contentfulBlogPost(slug:{eq:$slug}){
+      title
+      publishedDate(fromNow:true)
     }
   }
 `
@@ -25,7 +18,7 @@ const Blog = (props) => {
     // console.log(props.data)
     return (
         <Layout>
-            <BlogPost data={props.data} />
+            <BlogPost data={props.data.contentfulBlogPost} />
         </Layout>
     )
 }
